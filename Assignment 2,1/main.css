@@ -1,0 +1,171 @@
+/* Background with a radial gradient from dark red to black for a space/Mars theme */
+body {
+  background: radial-gradient(circle at top, #2a0000 0%, #000 100%);
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(90deg, #a10000, #660000);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
+
+/* Header title styles */
+header h1 {
+  letter-spacing: 3px;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+/* Main content container */
+main {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 900px;
+  text-align: center; /* ensures countdown centers nicely */
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  background-color: #ffcc99;
+  color: #660000;
+  padding: 10px 18px;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff6600;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #ff3300;
+  transform: scale(1.05);
+}
+
+/* Form container */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.6);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #ffcc99;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  background-color: #100000;
+  color: #fff;
+  font-size: 1em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #ff9933;
+}
+
+/* Messages */
+.error {
+  color: #ffcc00;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.success {
+  color: #00ff88;
+  font-weight: bold;
+ margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ff6600;
+  margin-top: 50px;
+  background: #1a0000;
+  color: #ffcc99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  nav a {
+    display: block;
+    margin: 8px auto;
+  }
+}
+
+.summary-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff6600;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 100, 0, 0.3);
+}
+
+/* Countdown */
+#divCountdown,
+#divCountdownMessage {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffd6b3;
+  border: 1px solid #ff6600;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
